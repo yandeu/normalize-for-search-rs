@@ -13,10 +13,9 @@ normalize-for-search = { git = "https://github.com/yandeu/normalize-for-search-r
 ## Example
 
 ```rust
-use normalize_for_search::normalize_for_search as nfs;
-use regex::Regex;
+use normalize_for_search::normalize_for_search;
 
 fn main() {
-    assert_eq!(nfs("Jérôme Müller "), "jerome muller");
+    assert_eq!(normalize_for_search("Jérôme Müller "), "jerome muller");
 }
 ```
